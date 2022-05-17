@@ -1,9 +1,9 @@
 # Личный проект «Седона»
 
-* Студент: [Валерия Сымолина](https://up.htmlacademy.ru/htmlcss/34/user/2083035).
-* Наставник: `Неизвестно`.
+* Студент: [Валерия Сымолкина](https://up.htmlacademy.ru/htmlcss/34/user/2083035).
+* Наставник: `Павел Позняк`.
 
----
+---к
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
