@@ -315,6 +315,11 @@ img {
   margin: 0 0 46px 0;
 }
 
+.newsletter-form {
+  display: grid;
+  grid-template-columns: 600px 200px;
+}
+
 .newsletter-form .button {
   font-family: inherit;
   font-weight: 700;
@@ -323,12 +328,9 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
-}
-
-.button {
   padding: 12px 15px;
-  border-radius: 10px;
-
+  border-radius: 0 10px 10px 0;
+  border: none;
 }
 
 .newsletter-form {
@@ -514,15 +516,29 @@ img {
   border-bottom: 1px solid #E6E6E6;
 }
 
+/* Hotel card */
+
+.hotel-card-item {
+  padding: 20px;
+}
+
+.hotel-card-image {
+  margin: 0 0 16px 0;
+}
+
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin: 0 0 16px 0;
 }
 
-.hotel-card-item {
-  padding: 20px;
+.hotel-card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto 3);
+  gap: 16px 20px;
 }
 
 .hotel-card-price+.hotel-card-info-button {
@@ -533,6 +549,9 @@ img {
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 9px 15px 8px 15px;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .hotel-card-info-button+.hotel-card-like-button {
@@ -543,11 +562,17 @@ img {
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 9px 15px 8px 15px;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .hotel-rating {
   font-size: 16px;
   line-height: 20px;
+  background-color: #f2f2f2;
+  padding: 9px 22px 8px 23px;
+  border-radius: 4px;
 }
 
 /* Pagination */
@@ -631,13 +656,23 @@ img {
 }
 
 .newsletter-info-inner {
+  font-size: 22px;
+  line-height: 26px;
   margin: 0 0 46px 0;
 }
 
+.newsletter-form-inner {
+  display: grid;
+  grid-template-columns: 600px 200px;
+}
 
-.newsletter-info-inner {
-  font-size: 22px;
-  line-height: 26px;
+.newsletter-input {
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 22px;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+  border: none;
 }
 
 .newsletter-form-inner .button {
@@ -648,4 +683,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
+  padding: 12px 15px;
+  border-radius: 0 10px 10px 0;
+  border: none;
 }
