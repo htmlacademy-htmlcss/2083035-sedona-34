@@ -49,7 +49,8 @@
           <!--Хлебные крошки -->
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
+              <span class="visually-hidden">Главная</span>
+              <a class="visually-hidden" href="index.html"></a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -113,7 +114,7 @@
               </fieldset>
 
               <fieldset class="catalog-filter-price">
-                <legend class="catalog-filter-title">Стоимость,₽</legend>
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <label class="control-price">
                   <input class="control-input-price" type="text" name="price-from" placeholder="0" />
                   от
@@ -124,9 +125,10 @@
                 </label>
                 <div class="range"></div>
               </fieldset>
-
-              <button class="accept-button" type="submit">Применить</button>
-              <button class="reset-button" type="reset">Сбросить</button>
+              <div class="button-wrapper">
+                <button class="accept-button" type="submit">Применить</button>
+                <button class="reset-button" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
@@ -136,7 +138,7 @@
         <h2 class="visually-hidden">Результаты поиска</h2>
         <!--Результаты поиска-->
         <div class="search-container">
-          <span class="results">Найдено гостиниц:38</span>
+          <span class="results">Найдено гостиниц: 38</span>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="pricy">Сначала дорогие</option>
@@ -172,12 +174,14 @@
                 alt="Фото гостиницы Amara Resort & Spa." />
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
-            <span class="hotel-card-type">Гостиница</span>
-            <span class="hotel-card-price">от 4000₽</span>
-            <a class="hotel-card-info-button" href="#">Подробнее</a>
-            <a class="hotel-card-like-button" href="#">Избранное</a>
-            <span class="star-rating"></span>
-            <span class="hotel-rating">Рейтинг:8,5</span>
+            <div class="hotel-card-content">
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-price">от 4000 ₽</span>
+              <a class="hotel-card-info-button" href="#">Подробнее</a>
+              <a class="hotel-card-like-button" href="#">Избранное</a>
+              <span class="star-rating"></span>
+              <span class="hotel-rating">Рейтинг: 8,5</span>
+            </div>
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="product.html">
@@ -185,12 +189,14 @@
                 alt="Фото гостиницы Villas at Poco Diablo." />
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
-            <span class="hotel-card-type">Гостиница</span>
-            <span class="hotel-card-price">от 5000₽</span>
-            <a class="hotel-card-info-button" href="#">Подробнее</a>
-            <a class="hotel-card-like-button" href="#">В избранном</a>
-            <span class="star-rating"></span>
-            <span class="hotel-rating">Рейтинг:9,2</span>
+            <div class="hotel-card-content">
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-price">от 5000 ₽</span>
+              <a class="hotel-card-info-button" href="#">Подробнее</a>
+              <a class="hotel-card-like-button" href="#">В избранном</a>
+              <span class="star-rating"></span>
+              <span class="hotel-rating">Рейтинг: 9,2</span>
+            </div>
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="product.html">
@@ -198,12 +204,14 @@
                 alt="Фото гостиницы Desert Quail Inn." />
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
-            <span class="hotel-card-type">Гостиница</span>
-            <span class="hotel-card-price">от 2500₽</span>
-            <a class="hotel-card-info-button" href="#">Подробнее</a>
-            <a class="hotel-card-like-button" href="#">Избранное</a>
-            <span class="star-rating"></span>
-            <span class="hotel-rating">Рейтинг:6,9</span>
+            <div class="hotel-card-content">
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-price">от 2500 ₽</span>
+              <a class="hotel-card-info-button" href="#">Подробнее</a>
+              <a class="hotel-card-like-button" href="#">Избранное</a>
+              <span class="star-rating"></span>
+              <span class="hotel-rating">Рейтинг: 6,9</span>
+            </div>
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="product.html">
@@ -211,12 +219,14 @@
                 alt="Фото гостиницы GreenTree Inn." />
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
-            <span class="hotel-card-type">Гостиница</span>
-            <span class="hotel-card-price">от 1500₽</span>
-            <a class="hotel-card-info-button" href="#">Подробнее</a>
-            <a class="hotel-card-like-button" href="#">Избранное</a>
-            <span class="star-rating"></span>
-            <span class="hotel-rating">Рейтинг:5,0</span>
+            <div class="hotel-card-content">
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-price">от 1500 ₽</span>
+              <a class="hotel-card-info-button" href="#">Подробнее</a>
+              <a class="hotel-card-like-button" href="#">Избранное</a>
+              <span class="star-rating"></span>
+              <span class="hotel-rating">Рейтинг: 5,0</span>
+            </div>
           </li>
         </ul>
 
@@ -236,7 +246,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <span class="pagination-link" href="#">...</span>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -256,9 +266,9 @@
       <!--Подписаться на рассылку-->
       <section class="newsletter-inner">
         <h2 class="newsletter-title-inner">Подпишитесь на рассылку</h2>
-        <p class="newsletter-info-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-info-inner">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="newsletter-form-inner">
-          <input id="email" type="email" placeholder="Ваш email" name="email" />
+          <input id="email" class="newsletter-input" type="email" placeholder="Ваш email" name="email" />
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
