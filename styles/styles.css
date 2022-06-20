@@ -73,18 +73,26 @@ img {
 .page-header {
   color: #000000;
   background-color: #ffffff;
+  position: relative;
 }
 
 /* Navigation */
 
 .navigation {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
-  padding: 0 70px;
+  padding: 0 70px 0 239px;
   align-items: center
 }
 
+.navigation-logo {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 140px;
+  height: 70px;
+
+}
 
 .navigation-link {
   font-weight: 700;
@@ -170,7 +178,8 @@ img {
 .advantages-description {
   font-size: 22px;
   line-height: 26px;
-  margin: 0 0 90px 0;
+  max-width: 654px;
+  margin: 0 auto 90px auto;
 }
 
 /*Advantage list*/
@@ -391,7 +400,7 @@ img {
 
 .breadcrumbs {
   display: flex;
-  list-style: none;
+  list-style-type: none;
   margin: 0 0 40px 0;
 }
 
@@ -406,10 +415,14 @@ img {
   display: flex;
   margin: 0 auto;
   align-items: center;
+
 }
 
 .catalog-filter-group {
   border: none;
+  margin: 0 70px 0 0;
+  padding: 0;
+  min-width: 150px;
 }
 
 .catalog-filter-title {
@@ -427,6 +440,14 @@ img {
 
 .catalog-filter-price {
   border: none;
+  padding: 0;
+  margin: 0 70px 0 175px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .accept-button {
@@ -435,18 +456,20 @@ img {
   line-height: 20px;
   color: #ffffff;
   background-color: #82B3D3;
+  text-transform: uppercase;
   padding: 14px 15px;
   border-radius: 4px;
+  min-width: 160px;
 }
 
 .reset-button {
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background-color: #000000;
   padding: 14px 15px;
   border-radius: 4px;
+  min-width: 160px;
 }
 
 /* Search results */
@@ -579,24 +602,26 @@ img {
 .pagination-container {
   display: flex;
   align-items: center;
-
 }
 
 .pagination {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  width: 410px;
+  max-width: 660px;
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
-  padding: 11.36px 24.55px 12.64px 23.45px;
+  padding: 5px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;

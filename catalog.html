@@ -49,7 +49,8 @@
           <!--Хлебные крошки -->
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
+              <span class="visually-hidden">Главная</span>
+              <a class="visually-hidden" href="index.html"></a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -113,7 +114,7 @@
               </fieldset>
 
               <fieldset class="catalog-filter-price">
-                <legend class="catalog-filter-title">Стоимость,₽</legend>
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <label class="control-price">
                   <input class="control-input-price" type="text" name="price-from" placeholder="0" />
                   от
@@ -124,9 +125,10 @@
                 </label>
                 <div class="range"></div>
               </fieldset>
-
-              <button class="accept-button" type="submit">Применить</button>
-              <button class="reset-button" type="reset">Сбросить</button>
+              <div class="button-wrapper">
+                <button class="accept-button" type="submit">Применить</button>
+                <button class="reset-button" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
@@ -136,7 +138,7 @@
         <h2 class="visually-hidden">Результаты поиска</h2>
         <!--Результаты поиска-->
         <div class="search-container">
-          <span class="results">Найдено гостиниц:38</span>
+          <span class="results">Найдено гостиниц: 38</span>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="pricy">Сначала дорогие</option>
@@ -244,7 +246,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <span class="pagination-link" href="#">...</span>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
