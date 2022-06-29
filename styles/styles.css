@@ -54,7 +54,6 @@ body {
 }
 
 
-
 /* Header */
 
 .page-wrapper {
@@ -78,7 +77,7 @@ body {
 .navigation {
   display: flex;
   margin: 0 auto;
-  padding: 0 70px 0 229px;
+  padding: 0 70px 0 228px;
   align-items: center;
 }
 
@@ -123,7 +122,7 @@ body {
 }
 
 .navigation-list {
-  margin: 0 30px;
+  margin: 0 29px;
   padding: 0;
   width: 500px;
   list-style-type: none;
@@ -139,11 +138,11 @@ body {
 .navigation-user-link {
   text-decoration: none;
   position: relative;
-  margin-right: 20px;
+  margin-right: 19px;
 }
 
 .navigation-user-link:nth-child(2) {
-  margin-right: 23px;
+  margin-right: 26px;
 }
 
 .navigation-user-like::after {
@@ -289,7 +288,8 @@ body {
   width: 75px;
   height: 72px;
   top: 80px;
-  left: 164px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .advantage-food::before {
@@ -300,7 +300,8 @@ body {
   width: 74px;
   height: 70px;
   top: 80px;
-  left: 164px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .advantage-souvenirs::before {
@@ -308,10 +309,11 @@ body {
   position: absolute;
   background-image: url('../images/recommendation-souvenirs.svg');
   background-repeat: no-repeat;
-  width: 74px;
+  width: 64px;
   height: 76px;
   top: 80px;
-  left: 167px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .advantage-list-modify .advantage-item {
@@ -488,6 +490,8 @@ body {
 
 .newsletter-form {
   font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /*Page footer*/
@@ -501,7 +505,7 @@ body {
 .footer-social-list {
   margin: 0;
   padding: 0;
-  width: 152px;
+  width: 350px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -535,8 +539,8 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: #000000;
-  text-align: center;
-  width: 820px;
+  width: 730px;
+  margin-left: 106px;
 }
 
 .footer-phone:hover {
@@ -598,7 +602,7 @@ body {
 }
 
 .breadcrumbs-item {
-  margin-left: 10px;
+  margin-right: 10px;
 
 }
 
@@ -606,6 +610,8 @@ body {
   width: 12px;
   height: 12px;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .breadcrumbs-link:hover {
@@ -739,7 +745,7 @@ body {
   margin-right: 68px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  padding-left: 18px;
+  padding-left: 16px;
 }
 
 .sorting-list {
@@ -1077,6 +1083,7 @@ body {
 }
 
 .newsletter-input {
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   padding-left: 22px;
