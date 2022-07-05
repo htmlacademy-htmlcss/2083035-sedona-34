@@ -535,6 +535,7 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+  white-space: nowrap;
 }
 
 .footer-phone:hover {
